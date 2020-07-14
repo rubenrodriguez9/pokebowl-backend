@@ -6,6 +6,15 @@ const pokemon = require('./pokemon.js');
 
 
 
+let getRow = function(str){
+ for(let i = 0;i < pokemon.length;i++){
+   if(str === pokemon[i][0]){
+     return pokemon[i]
+   }else if(pokemon[i][0].indexOf(str) === -1){
+     return null
+   }
+ }
+}
 
 // OUR code here.
 
