@@ -4,11 +4,10 @@
 let pokemon = require('./pokemon.js')
 
 const getUrl = function(arr){
-  for(let i = 0;i < pokemon.length;i++){
-    if(pokemon[i] === arr){
-      console.log(pokemon[i][1])
-    }
-  }
+  if(arr === null){
+    return null
+
+  }else return arr[1]
 }
 
 // OUR code here.
